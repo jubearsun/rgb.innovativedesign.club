@@ -1,0 +1,23 @@
+{
+  "name": "rgb",
+  "description": "RGB: Redefine Graphic Brilliance",
+  "main": "gulpfile.js",
+  "authors": [
+    "Julia Sun"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "jquery": "^2.2.1"
+  }
+}

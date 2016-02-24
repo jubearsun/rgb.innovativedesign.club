@@ -1,0 +1,3 @@
+var app = angular.module('hex', [])
+  .controller('MainCtrl', ['$scope', '$document', function($scope, $document) {
+  }]);

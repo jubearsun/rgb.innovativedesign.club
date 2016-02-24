@@ -1,0 +1,21 @@
+{
+  "name": "rgb",
+  "version": "1.0.0",
+  "description": "RGB: Redefine Graphic Brilliance",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jubearsun/rgb.innovativedesign.club.git"
+  },
+  "author": "Julia Sun",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "preinstall": "bower install"
+  }
+}
