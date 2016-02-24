@@ -1,0 +1,54 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#content {
+  max-width: 1440px;
+  margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Montserrat";
+  color: #252525;
+  cursor: default;
+}
+
+.page-container {
+  padding: 2%;
+}
+
+.landing-page {
+  height: 100vh;
+  text-align: center;
+  .landing-text {
+    height: 250px;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    .words {
+      display: none;
+    }
+  }
+}
+
+.about-page {
+  height: 100vh;
+}
+
+.schedule-page {
+  height: 100vh;
+}
