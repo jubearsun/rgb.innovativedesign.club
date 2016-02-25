@@ -59,10 +59,27 @@ canvas#drops {
     bottom: 0;
     text-transform: uppercase; }
     .landing-page #nav .nav-item {
-      padding: 0.2rem;
-      display: inline-block; }
+      padding: 0.4rem;
+      display: inline-block;
+      transition: color 250ms; }
       .landing-page #nav .nav-item:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        color: #252525; }
+        .landing-page #nav .nav-item:hover::after {
+          width: 100%;
+          left: 0; }
+      .landing-page #nav .nav-item::after {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        content: "";
+        height: 2px;
+        width: 0;
+        transition: all 250ms;
+        background: #252525; }
+    @media (max-width: 400px) {
+      .landing-page #nav {
+        font-size: 1rem; } }
 
 .about-page {
   height: 100vh; }

@@ -1,3 +1,4 @@
-# RGB: Redefine Graphic Brilliance
+# RGB: Reach. Grow. Build.
 
-Stand by!  More details to come.
+Annual design event held by [Innovative Design](http://innovativedesign.club/)
+featuring speakers from the design industry and workshops.

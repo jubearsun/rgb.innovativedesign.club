@@ -71,12 +71,34 @@ canvas#drops {
     text-transform: uppercase;
 
     .nav-item {
-      padding: 0.2rem;
+      padding: 0.4rem;
       display: inline-block;
+      transition: color 250ms;
 
       &:hover {
         cursor: pointer;
+        color: #252525;
+
+        &::after {
+          width: 100%;
+          left: 0;
+        }
       }
+
+      &::after {
+        position: absolute;
+        top: 105%;
+        left: 50%;
+        content: "";
+        height: 2px;
+        width: 0;
+        transition: all 250ms;
+        background: #252525;
+      }
+    }
+
+    @media (max-width: 400px) {
+      font-size: 1rem;
     }
   }
 }

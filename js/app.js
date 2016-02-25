@@ -1,6 +1,12 @@
 var app = angular.module('rgb', [])
   .controller('MainCtrl', ['$scope', '$document', function($scope, $document) {
 
+    function scrollAnimate(container) {
+      $('html, body').animate({
+        scrollTop: $(container).offset().top
+      }, 'slow');
+    };
+
     function animateWords() {
       var time = 0;
       $('.words').each(function() {
@@ -18,9 +24,25 @@ var app = angular.module('rgb', [])
     }
 
     $(document).ready(function() {
+
       animateWords();
+
       showNav();
+
       delayDrops();
+
+      $('#about').click(function() {
+        scrollAnimate('#about-container');
+      });
+
+      $('#schedule').click(function() {
+        scrollAnimate('#schedule-container');
+      });
+
+      $('#register').click(function() {
+        scrollAnimate('#register-container');
+      });
+
     });
 
     function rand(min, max) {
@@ -118,7 +140,7 @@ var app = angular.module('rgb', [])
       };
 
       for (i = 0; i < 200; i++) {
-        if (globalTick % 15 == 0) {
+        if (globalTick % 30 == 0) {
           parts.push(new Part(canvas));
         }
 
@@ -130,7 +152,7 @@ var app = angular.module('rgb', [])
         window.requestAnimFrame(loop, canvas);
         clear();
 
-        if (globalTick % 15 == 0){
+        if (globalTick % 30 == 0){
           parts.push(new Part(canvas));
         }
 
