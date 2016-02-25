@@ -26,9 +26,11 @@ html {
   padding: 2%; }
 
 .landing-page {
+  padding: 0%;
   height: 100vh;
   text-align: center; }
   .landing-page .landing-text {
+    z-index: 2;
     height: 250px;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
@@ -43,3 +45,11 @@ html {
 
 .schedule-page {
   height: 100vh; }
+
+.registration-page {
+  height: 100vh; }
+
+canvas#drops {
+  display: block;
+  position: absolute;
+  background: #FFFFFF; }
