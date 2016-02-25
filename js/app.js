@@ -10,7 +10,14 @@ var app = angular.module('rgb', [])
     function animateWords() {
       var time = 0;
       $('.words').each(function() {
-        $(this).delay(time).fadeIn(1000, 'swing');
+        $(this).delay(time).fadeIn(1000).addClass('flash');
+
+        (function(element, initTime) {
+          setTimeout(function() {
+            element.removeClass('flash');
+          }, (initTime + 600));
+        })($(this), time);
+
         time += 600;
       });
     };

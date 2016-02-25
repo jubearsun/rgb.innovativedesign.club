@@ -47,6 +47,7 @@ canvas#drops {
   text-align: center;
 
   .landing-text {
+    display: inline-block;
     z-index: 2;
     height: 250px;
     letter-spacing: 0.4rem;
@@ -57,6 +58,36 @@ canvas#drops {
 
     .words {
       display: none;
+
+      &.red {
+        transition: color 1000ms, transform 1000ms;
+
+        &:hover,
+        &.flash {
+          color: #FF4848;
+          transform: scale(1.2);
+        }
+      }
+
+      &.green {
+        transition: color 1000ms, transform 1000ms;
+
+        &:hover,
+        &.flash {
+          color: #1FCB4A;
+          transform: scale(1.2);
+        }
+      }
+
+      &.blue {
+        transition: color 1000ms, transform 1000ms;
+
+        &:hover,
+        &.flash {
+          color: #5757FF;
+          transform: scale(1.2);
+        }
+      }
     }
   }
 
@@ -78,22 +109,6 @@ canvas#drops {
       &:hover {
         cursor: pointer;
         color: #252525;
-
-        &::after {
-          width: 100%;
-          left: 0;
-        }
-      }
-
-      &::after {
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        content: "";
-        height: 2px;
-        width: 0;
-        transition: all 250ms;
-        background: #252525;
       }
     }
 

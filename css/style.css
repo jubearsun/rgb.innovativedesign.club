@@ -40,6 +40,7 @@ canvas#drops {
   height: 100vh;
   text-align: center; }
   .landing-page .landing-text {
+    display: inline-block;
     z-index: 2;
     height: 250px;
     letter-spacing: 0.4rem;
@@ -49,6 +50,21 @@ canvas#drops {
     transform: translateY(-50%); }
     .landing-page .landing-text .words {
       display: none; }
+      .landing-page .landing-text .words.red {
+        transition: color 1000ms, transform 1000ms; }
+        .landing-page .landing-text .words.red:hover, .landing-page .landing-text .words.red.flash {
+          color: #FF4848;
+          transform: scale(1.2); }
+      .landing-page .landing-text .words.green {
+        transition: color 1000ms, transform 1000ms; }
+        .landing-page .landing-text .words.green:hover, .landing-page .landing-text .words.green.flash {
+          color: #1FCB4A;
+          transform: scale(1.2); }
+      .landing-page .landing-text .words.blue {
+        transition: color 1000ms, transform 1000ms; }
+        .landing-page .landing-text .words.blue:hover, .landing-page .landing-text .words.blue.flash {
+          color: #5757FF;
+          transform: scale(1.2); }
   .landing-page #nav {
     color: #888888;
     display: none;
@@ -65,18 +81,6 @@ canvas#drops {
       .landing-page #nav .nav-item:hover {
         cursor: pointer;
         color: #252525; }
-        .landing-page #nav .nav-item:hover::after {
-          width: 100%;
-          left: 0; }
-      .landing-page #nav .nav-item::after {
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        content: "";
-        height: 2px;
-        width: 0;
-        transition: all 250ms;
-        background: #252525; }
     @media (max-width: 400px) {
       .landing-page #nav {
         font-size: 1rem; } }
