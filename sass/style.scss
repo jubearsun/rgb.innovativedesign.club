@@ -13,6 +13,18 @@ html {
   line-height: 1.6;
 }
 
+body {
+  position: relative;
+}
+
+canvas#drops {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  background: #FFFFFF;
+}
+
 #content {
   max-width: 1440px;
   margin: 0 auto;
@@ -33,14 +45,6 @@ html {
   padding: 0%;
   height: 100vh;
   text-align: center;
-
-  canvas#drops {
-    top: 0;
-    left: 0;
-    display: block;
-    position: fixed;
-    background: #FFFFFF;
-  }
 
   .landing-text {
     z-index: 2;

@@ -35,7 +35,7 @@ var app = angular.module('rgb', [])
     }
 
     function resizeCanvas(canvas) {
-      var height = window.innerHeight;
+      var height = $(document).height();
       var width = window.innerWidth;
       canvas.height = height;
       canvas.width = width;
@@ -118,7 +118,7 @@ var app = angular.module('rgb', [])
       };
 
       for (i = 0; i < 200; i++) {
-        if (globalTick % 30 == 0) {
+        if (globalTick % 15 == 0) {
           parts.push(new Part(canvas));
         }
 
@@ -130,7 +130,7 @@ var app = angular.module('rgb', [])
         window.requestAnimFrame(loop, canvas);
         clear();
 
-        if (globalTick % 30 == 0){
+        if (globalTick % 15 == 0){
           parts.push(new Part(canvas));
         }
 
