@@ -9,8 +9,18 @@ var app = angular.module('rgb', [])
       });
     };
 
+    function showNav() {
+      $('#nav').delay(1800).fadeIn(500, 'linear');
+    };
+
+    function delayDrops() {
+      setTimeout(startDrops, 2500);
+    }
+
     $(document).ready(function() {
       animateWords();
+      showNav();
+      delayDrops();
     });
 
     function rand(min, max) {
@@ -74,7 +84,7 @@ var app = angular.module('rgb', [])
       ctx.fill();
     };
 
-    setTimeout(function() {
+    function startDrops() {
       var canvas = document.getElementById('drops');
       var ctx = canvas.getContext('2d');
       var parts = [];
@@ -139,7 +149,6 @@ var app = angular.module('rgb', [])
       };
 
       loop();
-
-    }, 1);
+    }
 
   }]);

@@ -29,6 +29,12 @@ html {
   padding: 0%;
   height: 100vh;
   text-align: center; }
+  .landing-page canvas#drops {
+    top: 0;
+    left: 0;
+    display: block;
+    position: fixed;
+    background: #FFFFFF; }
   .landing-page .landing-text {
     z-index: 2;
     height: 250px;
@@ -39,6 +45,20 @@ html {
     transform: translateY(-50%); }
     .landing-page .landing-text .words {
       display: none; }
+  .landing-page #nav {
+    color: #888888;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    font-size: 1.25rem;
+    bottom: 0;
+    text-transform: uppercase; }
+    .landing-page #nav .nav-item {
+      padding: 0.2rem;
+      display: inline-block; }
+      .landing-page #nav .nav-item:hover {
+        cursor: pointer; }
 
 .about-page {
   height: 100vh; }
@@ -48,8 +68,3 @@ html {
 
 .registration-page {
   height: 100vh; }
-
-canvas#drops {
-  display: block;
-  position: absolute;
-  background: #FFFFFF; }
