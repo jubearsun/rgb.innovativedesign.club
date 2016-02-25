@@ -108,7 +108,7 @@ var app = angular.module('rgb', [])
       };
 
       for (i = 0; i < 200; i++) {
-        if (globalTick % 20 == 0) {
+        if (globalTick % 30 == 0) {
           parts.push(new Part(canvas));
         }
 
@@ -120,7 +120,7 @@ var app = angular.module('rgb', [])
         window.requestAnimFrame(loop, canvas);
         clear();
 
-        if (globalTick % 20 == 0){
+        if (globalTick % 30 == 0){
           parts.push(new Part(canvas));
         }
 
