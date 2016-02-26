@@ -1,6 +1,39 @@
 var app = angular.module('rgb', [])
   .controller('MainCtrl', ['$scope', '$document', function($scope, $document) {
 
+    $scope.speakers = [
+      {
+        name: 'Pikachu',
+        position: 'Pokemon',
+        company: 'Pokemon League',
+        image: './img/speakers/speaker-1.jpg'
+      },
+      {
+        name: 'Caitlyn',
+        position: 'AD Carry',
+        company: 'League of Legends',
+        image: './img/speakers/speaker-2.jpg'
+      },
+      {
+        name: 'Link',
+        position: 'Chosen Hero',
+        company: 'Hyrule',
+        image: './img/speakers/speaker-3.jpg'
+      },
+      {
+        name: 'Daenerys Targaryen',
+        position: 'Mother of Dragons',
+        company: 'Westeros',
+        image: './img/speakers/speaker-4.jpg'
+      },
+      {
+        name: 'Harry Potter',
+        position: 'The Boy Who Lived',
+        company: 'Hogwarts',
+        image: './img/speakers/speaker-5.jpg'
+      }
+    ];
+
     function scrollAnimate(container) {
       $('html, body').animate({
         scrollTop: $(container).offset().top

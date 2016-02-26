@@ -1,3 +1,5 @@
+@import 'variables';
+
 *,
 *:after,
 *:before {
@@ -33,7 +35,7 @@ canvas#drops {
   -ms-user-select: none;
   user-select: none;
   font-family: "Montserrat";
-  color: #252525;
+  color: $black;
   cursor: default;
 }
 
@@ -64,7 +66,7 @@ canvas#drops {
 
         &:hover,
         &.flash {
-          color: #FF4848;
+          color: $red;
           transform: scale(1.2);
         }
       }
@@ -74,7 +76,7 @@ canvas#drops {
 
         &:hover,
         &.flash {
-          color: #1FCB4A;
+          color: $green;
           transform: scale(1.2);
         }
       }
@@ -84,7 +86,7 @@ canvas#drops {
 
         &:hover,
         &.flash {
-          color: #5757FF;
+          color: $blue;
           transform: scale(1.2);
         }
       }
@@ -92,7 +94,6 @@ canvas#drops {
   }
 
   #nav {
-    color: #888888;
     display: none;
     width: 100%;
     padding: 20px;
@@ -104,11 +105,36 @@ canvas#drops {
     .nav-item {
       padding: 0.4rem;
       display: inline-block;
-      transition: color 250ms;
+
+      &#about {
+        color: $grey;
+        transition: color 250ms;
+
+        &:hover {
+          color: $red;
+        }
+      }
+
+      &#schedule {
+        color: $grey;
+        transition: color 250ms;
+
+        &:hover {
+          color: $green;
+        }
+      }
+
+      &#register {
+        color: $grey;
+        transition: color 250ms;
+
+        &:hover {
+          color: $blue;
+        }
+      }
 
       &:hover {
         cursor: pointer;
-        color: #252525;
       }
     }
 
@@ -119,7 +145,108 @@ canvas#drops {
 }
 
 .about-page {
-  height: 100vh;
+  height: auto;
+  padding: 5% 20px 5% 20px;
+
+  .title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .about-info {
+    padding: 0.2rem;
+    color: $grey;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-family: "Lato";
+    margin-bottom: 1.5rem;
+  }
+
+  .speakers-wrapper {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+    .speaker {
+      margin: 2%;
+      display: inline-block;
+
+      .speaker-img {
+        height: 250px;
+        width: 250px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: opacity 250ms;
+      }
+
+      .overlay {
+        display: inline-block;
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 250ms;
+
+        &.Pikachu {
+          background: $red;
+        }
+
+        &.Caitlyn {
+          background: $blue;
+        }
+
+        &.Link {
+          background: $green;
+        }
+
+        &.Daenerys {
+          background: $red;
+        }
+
+        &.Harry {
+          background: $blue;
+        }
+      }
+
+      .speaker-info {
+        opacity: 0;
+        color: $white;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.2rem;
+        transform: translate(0, -50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transition: opacity 250ms;
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 0.8;
+        }
+
+        .speaker-info {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
 
 .schedule-page {

@@ -53,20 +53,19 @@ canvas#drops {
       .landing-page .landing-text .words.red {
         transition: color 1000ms, transform 1000ms; }
         .landing-page .landing-text .words.red:hover, .landing-page .landing-text .words.red.flash {
-          color: #FF4848;
+          color: #FF5B4B;
           transform: scale(1.2); }
       .landing-page .landing-text .words.green {
         transition: color 1000ms, transform 1000ms; }
         .landing-page .landing-text .words.green:hover, .landing-page .landing-text .words.green.flash {
-          color: #1FCB4A;
+          color: #6EDC47;
           transform: scale(1.2); }
       .landing-page .landing-text .words.blue {
         transition: color 1000ms, transform 1000ms; }
         .landing-page .landing-text .words.blue:hover, .landing-page .landing-text .words.blue.flash {
-          color: #5757FF;
+          color: #52A3EA;
           transform: scale(1.2); }
   .landing-page #nav {
-    color: #888888;
     display: none;
     width: 100%;
     padding: 20px;
@@ -76,17 +75,99 @@ canvas#drops {
     text-transform: uppercase; }
     .landing-page #nav .nav-item {
       padding: 0.4rem;
-      display: inline-block;
-      transition: color 250ms; }
+      display: inline-block; }
+      .landing-page #nav .nav-item#about {
+        color: #888888;
+        transition: color 250ms; }
+        .landing-page #nav .nav-item#about:hover {
+          color: #FF5B4B; }
+      .landing-page #nav .nav-item#schedule {
+        color: #888888;
+        transition: color 250ms; }
+        .landing-page #nav .nav-item#schedule:hover {
+          color: #6EDC47; }
+      .landing-page #nav .nav-item#register {
+        color: #888888;
+        transition: color 250ms; }
+        .landing-page #nav .nav-item#register:hover {
+          color: #52A3EA; }
       .landing-page #nav .nav-item:hover {
-        cursor: pointer;
-        color: #252525; }
+        cursor: pointer; }
     @media (max-width: 400px) {
       .landing-page #nav {
         font-size: 1rem; } }
 
 .about-page {
-  height: 100vh; }
+  height: auto;
+  padding: 5% 20px 5% 20px; }
+  .about-page .title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem; }
+  .about-page .subtitle {
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem; }
+  .about-page .about-info {
+    padding: 0.2rem;
+    color: #888888;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-family: "Lato";
+    margin-bottom: 1.5rem; }
+  .about-page .speakers-wrapper {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+    .about-page .speakers-wrapper .speaker {
+      margin: 2%;
+      display: inline-block; }
+      .about-page .speakers-wrapper .speaker .speaker-img {
+        height: 250px;
+        width: 250px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: opacity 250ms; }
+      .about-page .speakers-wrapper .speaker .overlay {
+        display: inline-block;
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 250ms; }
+        .about-page .speakers-wrapper .speaker .overlay.Pikachu {
+          background: #FF5B4B; }
+        .about-page .speakers-wrapper .speaker .overlay.Caitlyn {
+          background: #52A3EA; }
+        .about-page .speakers-wrapper .speaker .overlay.Link {
+          background: #6EDC47; }
+        .about-page .speakers-wrapper .speaker .overlay.Daenerys {
+          background: #FF5B4B; }
+        .about-page .speakers-wrapper .speaker .overlay.Harry {
+          background: #52A3EA; }
+      .about-page .speakers-wrapper .speaker .speaker-info {
+        opacity: 0;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.2rem;
+        transform: translate(0, -50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transition: opacity 250ms; }
+      .about-page .speakers-wrapper .speaker:hover .overlay {
+        opacity: 0.8; }
+      .about-page .speakers-wrapper .speaker:hover .speaker-info {
+        opacity: 1; }
 
 .schedule-page {
   height: 100vh; }

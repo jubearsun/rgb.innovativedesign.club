@@ -38,7 +38,23 @@
       </div>
     </div>
     <div class="about-page page-container" id="about-container">
-      ABOUT RGB
+      <div class="title">about</div>
+      <div class="subtitle">What is RGB?</div>
+      <div class="about-info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, dolorum nobis autem, laborum culpa doloribus, quibusdam praesentium sunt repellat obcaecati quisquam repellendus deserunt aperiam eveniet maxime aliquid. Ab, dolorem.
+      </div>
+      <div class="subtitle">What should I bring?</div>
+      <div class="about-info">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis libero rerum sed aperiam doloremque maxime ad aut placeat! Ullam nisi consequuntur aliquam accusantium nulla quas doloribus tempora cumque, dolore.
+      </div>
+      <div class="subtitle">Who will be there?</div>
+      <div class="speakers-wrapper">
+        <div class="speaker {{ speaker.name }}" ng-repeat="speaker in speakers track by $index">
+          <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
+          <div class="overlay {{ speaker.name }}"></div>
+          <div class="speaker-info">{{ speaker.position }} at {{ speaker.company }}</div>
+        </div>
+      </div>
     </div>
     <div class="schedule-page page-container" id="schedule-container">
       SCHEDULE
