@@ -37,7 +37,7 @@ canvas#drops {
   cursor: default;
 }
 
-.pages-wrapper {
+#pages-wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -175,7 +175,7 @@ canvas#drops {
 
 .about-page {
   height: auto;
-  padding: 5% 20px 5% 20px;
+  padding: 5% 10px 5% 10px;
 
   .speakers-wrapper {
     text-align: center;
@@ -250,7 +250,8 @@ canvas#drops {
         }
       }
 
-      &:hover {
+      &:hover,
+      &:focus {
         .overlay {
           opacity: 0.8;
         }
@@ -265,10 +266,10 @@ canvas#drops {
 
 .schedule-page {
   height: auto;
-  padding: 5% 20px 5% 20px;
+  padding: 5% 10px 5% 10px;
 
   .schedule-item {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 2.5rem;
@@ -282,7 +283,7 @@ canvas#drops {
       width: 20%;
       margin-right: 2.5%;
 
-      @media (max-width: 560px) {
+      @media (max-width: 780px) {
         display: block;
         width: 100%;
         text-align: center;
@@ -302,7 +303,7 @@ canvas#drops {
         color: $grey;
       }
 
-      @media (max-width: 560px) {
+      @media (max-width: 780px) {
         text-align: center;
         display: block;
         width: 100%;

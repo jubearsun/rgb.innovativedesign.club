@@ -110,7 +110,7 @@ var app = angular.module('rgb', [])
     }
 
     function resizeCanvas(canvas) {
-      var height = $(document).height();
+      var height = $('#pages-wrapper').height();
       var width = window.innerWidth;
       canvas.height = height;
       canvas.width = width;

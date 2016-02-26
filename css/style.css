@@ -30,7 +30,7 @@ canvas#drops {
   color: #252525;
   cursor: default; }
 
-.pages-wrapper {
+#pages-wrapper {
   max-width: 1440px;
   margin: 0 auto; }
 
@@ -121,7 +121,7 @@ canvas#drops {
 
 .about-page {
   height: auto;
-  padding: 5% 20px 5% 20px; }
+  padding: 5% 10px 5% 10px; }
   .about-page .speakers-wrapper {
     text-align: center;
     width: 75%;
@@ -173,16 +173,16 @@ canvas#drops {
           text-align: center;
           font-size: 1.5rem;
           font-weight: 300; }
-      .about-page .speakers-wrapper .speaker:hover .overlay {
+      .about-page .speakers-wrapper .speaker:hover .overlay, .about-page .speakers-wrapper .speaker:focus .overlay {
         opacity: 0.8; }
-      .about-page .speakers-wrapper .speaker:hover .speaker-info {
+      .about-page .speakers-wrapper .speaker:hover .speaker-info, .about-page .speakers-wrapper .speaker:focus .speaker-info {
         opacity: 1; }
 
 .schedule-page {
   height: auto;
-  padding: 5% 20px 5% 20px; }
+  padding: 5% 10px 5% 10px; }
   .schedule-page .schedule-item {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 2.5rem;
@@ -194,7 +194,7 @@ canvas#drops {
       display: inline-block;
       width: 20%;
       margin-right: 2.5%; }
-      @media (max-width: 560px) {
+      @media (max-width: 780px) {
         .schedule-page .schedule-item .schedule-time {
           display: block;
           width: 100%;
@@ -207,7 +207,7 @@ canvas#drops {
         font-size: 1.5rem; }
       .schedule-page .schedule-item .info-wrapper .schedule-description {
         color: #888888; }
-      @media (max-width: 560px) {
+      @media (max-width: 780px) {
         .schedule-page .schedule-item .info-wrapper {
           text-align: center;
           display: block;
