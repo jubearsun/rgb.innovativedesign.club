@@ -2,13 +2,13 @@
 <!-- By Julia Sun (http://juliasun.io/) -->
 <html id="ng-app" data-ng-app="rgb">
   <head>
-    <title>RGB: Reach, Grow, and Build</title>
+    <title>RGB: Reach. Grow. Build</title>
     <meta name="viewport" content="initial-scale=1">
 
     <meta property="og:title" content="RGB: Reach, Grow, Build">
     <meta property="og:type" content="website">
-    <!-- <meta property="og:url" content="http://rgb.innovativedesign.club"> -->
-    <!-- <meta property="og:image" content="http://rgb.innovativedesign.club/img/logo/og.png"> -->
+    <meta property="og:url" content="http://rgb.innovativedesign.club">
+    <meta property="og:image" content="http://rgb.innovativedesign.club/img/logo/favicon.png">
     <!-- <meta property="og:description" content="description here"> -->
 
     <!-- <link rel="icon" type="image/png" href="img/logo/favicon.png"> -->
@@ -52,7 +52,10 @@
         <div class="speaker {{ speaker.name }}" ng-repeat="speaker in speakers track by $index">
           <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
           <div class="overlay {{ speaker.name }}"></div>
-          <div class="speaker-info">{{ speaker.position }} at {{ speaker.company }}</div>
+          <div class="speaker-info">
+            <div class="speaker-name">{{ speaker.name }}</div>
+            <div class="speaker-description">{{ speaker.position }} at {{ speaker.company }}</div>
+          </div>
         </div>
       </div>
     </div>

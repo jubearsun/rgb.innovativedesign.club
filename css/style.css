@@ -154,16 +154,23 @@ canvas#drops {
         .about-page .speakers-wrapper .speaker .overlay.Harry {
           background: #52A3EA; }
       .about-page .speakers-wrapper .speaker .speaker-info {
+        font-family: "Lato";
         opacity: 0;
         color: #FFFFFF;
-        font-size: 1.5rem;
         text-align: center;
-        padding: 0.2rem;
+        padding: 0.5rem;
         transform: translate(0, -50%);
         position: absolute;
         top: 50%;
         left: 0;
         transition: opacity 250ms; }
+        .about-page .speakers-wrapper .speaker .speaker-info .speaker-name {
+          font-size: 1.75rem;
+          font-weight: 400; }
+        .about-page .speakers-wrapper .speaker .speaker-info .speaker-description {
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 300; }
       .about-page .speakers-wrapper .speaker:hover .overlay {
         opacity: 0.8; }
       .about-page .speakers-wrapper .speaker:hover .speaker-info {
