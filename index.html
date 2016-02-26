@@ -40,11 +40,11 @@
     <div class="about-page page-container" id="about-container">
       <div class="title">about</div>
       <div class="subtitle">What is RGB?</div>
-      <div class="about-info">
+      <div class="info">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, dolorum nobis autem, laborum culpa doloribus, quibusdam praesentium sunt repellat obcaecati quisquam repellendus deserunt aperiam eveniet maxime aliquid. Ab, dolorem.
       </div>
       <div class="subtitle">What should I bring?</div>
-      <div class="about-info">
+      <div class="info">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis libero rerum sed aperiam doloremque maxime ad aut placeat! Ullam nisi consequuntur aliquam accusantium nulla quas doloribus tempora cumque, dolore.
       </div>
       <div class="subtitle">Who will be there?</div>
@@ -57,10 +57,17 @@
       </div>
     </div>
     <div class="schedule-page page-container" id="schedule-container">
-      SCHEDULE
+      <div class="title">schedule</div>
+      <div class="schedule-item" ng-repeat="event in schedule track by $index">
+        <div class="schedule-time">{{ event.time }}</div>
+        <div class="info-wrapper">
+          <div class="schedule-event">{{ event.name }}</div>
+          <div class="schedule-description">{{ event.description }}</div>
+        </div>
+      </div>
     </div>
     <div class="registration-page page-container" id="register-container">
-      register blah blah blahh
+      <div class="title">register</div>
     </div>
   </body>
 </html>

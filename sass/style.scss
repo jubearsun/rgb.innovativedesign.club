@@ -41,6 +41,32 @@ canvas#drops {
 
 .page-container {
   padding: 2%;
+
+  .title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .subtitle {
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .info {
+    padding: 0.2rem;
+    color: $grey;
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-family: "Lato";
+    margin-bottom: 1.5rem;
+  }
 }
 
 .landing-page {
@@ -148,32 +174,6 @@ canvas#drops {
   height: auto;
   padding: 5% 20px 5% 20px;
 
-  .title {
-    padding: 2rem;
-    font-size: 2.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
-  }
-
-  .subtitle {
-    padding: 0.4rem;
-    text-align: center;
-    font-size: 1.25rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .about-info {
-    padding: 0.2rem;
-    color: $grey;
-    max-width: 900px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    line-height: 2.5rem;
-    font-family: "Lato";
-    margin-bottom: 1.5rem;
-  }
-
   .speakers-wrapper {
     text-align: center;
     width: 75%;
@@ -250,9 +250,53 @@ canvas#drops {
 }
 
 .schedule-page {
-  height: 100vh;
+  height: auto;
+  padding: 5% 20px 5% 20px;
+
+  .schedule-item {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    font-family: "Lato";
+
+    .schedule-time {
+      font-size: 1.5rem;
+      text-align: right;
+      vertical-align: top;
+      display: inline-block;
+      width: 20%;
+      margin-right: 2.5%;
+
+      @media (max-width: 560px) {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .info-wrapper {
+      text-align: left;
+      display: inline-block;
+      width: 67.5%;
+
+      .schedule-event {
+        font-size: 1.5rem;
+      }
+
+      .schedule-description {
+        color: $grey;
+      }
+
+      @media (max-width: 560px) {
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .registration-page {
-  height: 100vh;
+  height: auto;
 }

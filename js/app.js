@@ -34,6 +34,19 @@ var app = angular.module('rgb', [])
       }
     ];
 
+    $scope.schedule = [
+      {
+        time: '10:30 AM',
+        name: 'Breakfast',
+        description: 'eating time nom nom nom'
+      },
+      {
+        time: '11:00 AM',
+        name: 'ITS HAPPENING',
+        description: 'rgb things happen'
+      }
+    ];
+
     function scrollAnimate(container) {
       $('html, body').animate({
         scrollTop: $(container).offset().top
