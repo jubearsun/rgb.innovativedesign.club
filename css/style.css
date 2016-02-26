@@ -22,8 +22,6 @@ canvas#drops {
   background: #FFFFFF; }
 
 #content {
-  max-width: 1440px;
-  margin: 0 auto;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -31,6 +29,10 @@ canvas#drops {
   font-family: "Montserrat";
   color: #252525;
   cursor: default; }
+
+.pages-wrapper {
+  max-width: 1440px;
+  margin: 0 auto; }
 
 .page-container {
   padding: 2%; }

@@ -25,52 +25,54 @@
   </head>
   <body id="content" ng-controller="MainCtrl">
     <canvas id="drops"></canvas>
-    <div class="landing-page page-container">
-      <div class="landing-text">
-        <div class="words red">reach</div>
-        <div class="words green">grow</div>
-        <div class="words blue">build</div>
+    <div class="pages-wrapper">
+      <div class="landing-page page-container">
+        <div class="landing-text">
+          <div class="words red">reach</div>
+          <div class="words green">grow</div>
+          <div class="words blue">build</div>
+        </div>
+        <div id="nav">
+          <div class="nav-item" id="about">about</div>
+          <div class="nav-item" id="schedule">schedule</div>
+          <div class="nav-item" id="register">register</div>
+        </div>
       </div>
-      <div id="nav">
-        <div class="nav-item" id="about">about</div>
-        <div class="nav-item" id="schedule">schedule</div>
-        <div class="nav-item" id="register">register</div>
-      </div>
-    </div>
-    <div class="about-page page-container" id="about-container">
-      <div class="title">about</div>
-      <div class="subtitle">What is RGB?</div>
-      <div class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, dolorum nobis autem, laborum culpa doloribus, quibusdam praesentium sunt repellat obcaecati quisquam repellendus deserunt aperiam eveniet maxime aliquid. Ab, dolorem.
-      </div>
-      <div class="subtitle">What should I bring?</div>
-      <div class="info">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis libero rerum sed aperiam doloremque maxime ad aut placeat! Ullam nisi consequuntur aliquam accusantium nulla quas doloribus tempora cumque, dolore.
-      </div>
-      <div class="subtitle">Who will be there?</div>
-      <div class="speakers-wrapper">
-        <div class="speaker {{ speaker.name }}" ng-repeat="speaker in speakers track by $index">
-          <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
-          <div class="overlay {{ speaker.name }}"></div>
-          <div class="speaker-info">
-            <div class="speaker-name">{{ speaker.name }}</div>
-            <div class="speaker-description">{{ speaker.position }} at {{ speaker.company }}</div>
+      <div class="about-page page-container" id="about-container">
+        <div class="title">about</div>
+        <div class="subtitle">What is RGB?</div>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, dolorum nobis autem, laborum culpa doloribus, quibusdam praesentium sunt repellat obcaecati quisquam repellendus deserunt aperiam eveniet maxime aliquid. Ab, dolorem.
+        </div>
+        <div class="subtitle">What should I bring?</div>
+        <div class="info">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis libero rerum sed aperiam doloremque maxime ad aut placeat! Ullam nisi consequuntur aliquam accusantium nulla quas doloribus tempora cumque, dolore.
+        </div>
+        <div class="subtitle">Who will be there?</div>
+        <div class="speakers-wrapper">
+          <div class="speaker {{ speaker.name }}" ng-repeat="speaker in speakers track by $index">
+            <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
+            <div class="overlay {{ speaker.name }}"></div>
+            <div class="speaker-info">
+              <div class="speaker-name">{{ speaker.name }}</div>
+              <div class="speaker-description">{{ speaker.position }} at {{ speaker.company }}</div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="schedule-page page-container" id="schedule-container">
-      <div class="title">schedule</div>
-      <div class="schedule-item" ng-repeat="event in schedule track by $index">
-        <div class="schedule-time">{{ event.time }}</div>
-        <div class="info-wrapper">
-          <div class="schedule-event">{{ event.name }}</div>
-          <div class="schedule-description">{{ event.description }}</div>
+      <div class="schedule-page page-container" id="schedule-container">
+        <div class="title">schedule</div>
+        <div class="schedule-item" ng-repeat="event in schedule track by $index">
+          <div class="schedule-time">{{ event.time }}</div>
+          <div class="info-wrapper">
+            <div class="schedule-event">{{ event.name }}</div>
+            <div class="schedule-description">{{ event.description }}</div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="registration-page page-container" id="register-container">
-      <div class="title">register</div>
+      <div class="registration-page page-container" id="register-container">
+        <div class="title">register</div>
+      </div>
     </div>
   </body>
 </html>
