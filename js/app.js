@@ -3,47 +3,65 @@ var app = angular.module('rgb', [])
 
     $scope.speakers = [
       {
-        name: 'Pikachu',
-        position: 'Pokemon',
-        company: 'Pokemon League',
+        link: 'http://www.maylikhoe.com',
+        name: 'May-Li Khoe',
+        position: 'Design Lead',
+        company: 'Khan Academy',
         image: './img/speakers/speaker-1.jpg'
       },
       {
-        name: 'Caitlyn',
-        position: 'AD Carry',
-        company: 'League of Legends',
+        link: 'http://ritaderaedt.com/',
+        name: 'Rita DeRaedt',
+        position: 'Product Designer',
+        company: 'Google',
         image: './img/speakers/speaker-2.jpg'
       },
       {
-        name: 'Link',
-        position: 'Chosen Hero',
-        company: 'Hyrule',
+        link: 'http://www.andretacuyan.com/',
+        name: 'Andre Tacuyan',
+        position: 'Product Designer',
+        company: 'Google',
         image: './img/speakers/speaker-3.jpg'
       },
       {
-        name: 'Daenerys Targaryen',
-        position: 'Mother of Dragons',
-        company: 'Westeros',
+        link: 'http://viethuynh.com/',
+        name: 'Viet Huynh',
+        position: 'Communication Designer',
+        company: 'Palantir',
         image: './img/speakers/speaker-4.jpg'
-      },
-      {
-        name: 'Harry Potter',
-        position: 'The Boy Who Lived',
-        company: 'Hogwarts',
-        image: './img/speakers/speaker-5.jpg'
       }
     ];
 
     $scope.schedule = [
       {
-        time: '10:30 AM',
-        name: 'Breakfast',
-        description: 'eating time nom nom nom'
+        time: '9:30 AM',
+        name: 'Check In',
+        description: 'Welcome to RGB!  Remember to bring your Cal ID for entry!'
       },
       {
-        time: '11:00 AM',
-        name: 'ITS HAPPENING',
-        description: 'rgb things happen'
+        time: '10:00 AM',
+        name: 'Speaker Series',
+        description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, what it\'s like working in the design industry, and more!'
+      },
+      {
+        time: '12:30 PM',
+        name: 'Lunch',
+        description: 'food food food'
+      },
+      {
+        time: '1:30 PM',
+        name: 'Workshop Series #1',
+        description: 'something happens here'
+      },
+      {
+        time: '2:00 PM',
+        name: 'Workshop Series #2',
+        description: 'something else happens here'
+      },
+      {
+        time: '2:30 PM',
+        name: 'Closing Remarks + Open Floor',
+        description: 'We wrap things up and open up the floor for mingling!'
       }
     ];
 

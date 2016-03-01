@@ -56,7 +56,7 @@ canvas#drops {
   .subtitle {
     padding: 0.4rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0.7rem;
   }
 
@@ -66,9 +66,30 @@ canvas#drops {
     max-width: 900px;
     margin: 0 auto;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     font-family: "Lato";
     margin-bottom: 1.5rem;
+
+    #bold {
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $red;
+      font-weight: 700;
+      transition: color 250ms;
+
+      &:visited {
+        color: $green;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
   }
 }
 
@@ -179,85 +200,85 @@ canvas#drops {
 
   .speakers-wrapper {
     text-align: center;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
 
     .speaker {
       margin: 2%;
       display: inline-block;
 
-      .speaker-img {
-        height: 250px;
-        width: 250px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: opacity 250ms;
-      }
-
-      .overlay {
+      .link {
         display: inline-block;
-        position: absolute;
-        height: 250px;
-        width: 250px;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 250ms;
 
-        &.Pikachu {
-          background: $red;
+        .speaker-img {
+          height: 250px;
+          width: 250px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: opacity 250ms;
         }
 
-        &.Caitlyn {
-          background: $blue;
-        }
-
-        &.Link {
-          background: $green;
-        }
-
-        &.Daenerys {
-          background: $red;
-        }
-
-        &.Harry {
-          background: $blue;
-        }
-      }
-
-      .speaker-info {
-        font-family: "Lato";
-        opacity: 0;
-        color: $white;
-        text-align: center;
-        padding: 0.5rem;
-        transform: translate(0, -50%);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transition: opacity 250ms;
-
-        .speaker-name {
-          font-size: 1.75rem;
-          font-weight: 400;
-        }
-
-        .speaker-description {
-          text-align: center;
-          font-size: 1.5rem;
-          font-weight: 300;
-        }
-      }
-
-      &:hover,
-      &:focus {
         .overlay {
-          opacity: 0.8;
+          display: inline-block;
+          position: absolute;
+          height: 250px;
+          width: 250px;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 250ms;
+
+          &.May-Li {
+            background: $red;
+          }
+
+          &.Rita {
+            background: $blue;
+          }
+
+          &.Andre {
+            background: $green;
+          }
+
+          &.Viet {
+            background: $red;
+          }
         }
 
         .speaker-info {
-          opacity: 1;
+          font-family: "Lato";
+          opacity: 0;
+          color: $white;
+          text-align: center;
+          padding: 0.5rem;
+          transform: translate(0, -50%);
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transition: opacity 250ms;
+
+          .speaker-name {
+            font-size: 1.75rem;
+            font-weight: 400;
+          }
+
+          .speaker-description {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 300;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          .overlay {
+            opacity: 0.8;
+          }
+
+          .speaker-info {
+            opacity: 1;
+          }
         }
       }
     }
@@ -266,7 +287,7 @@ canvas#drops {
 
 .schedule-page {
   height: auto;
-  padding: 5% 10px 5% 10px;
+  padding: 5% 0px 5% 0px;
 
   .schedule-item {
     width: 70%;
@@ -314,4 +335,8 @@ canvas#drops {
 
 .registration-page {
   height: auto;
+
+  .info {
+    text-align: center;
+  }
 }

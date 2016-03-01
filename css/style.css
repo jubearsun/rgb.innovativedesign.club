@@ -45,7 +45,7 @@ canvas#drops {
   .page-container .subtitle {
     padding: 0.4rem;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-bottom: 0.7rem; }
   .page-container .info {
     padding: 0.2rem;
@@ -53,9 +53,22 @@ canvas#drops {
     max-width: 900px;
     margin: 0 auto;
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     font-family: "Lato";
     margin-bottom: 1.5rem; }
+    .page-container .info #bold {
+      font-weight: 700; }
+    .page-container .info a {
+      text-decoration: underline;
+      color: #FF5B4B;
+      font-weight: 700;
+      transition: color 250ms; }
+      .page-container .info a:visited {
+        color: #6EDC47;
+        font-weight: 700;
+        text-decoration: none; }
+      .page-container .info a:hover {
+        color: #52A3EA; }
 
 .landing-page {
   padding: 0%;
@@ -124,63 +137,63 @@ canvas#drops {
   padding: 5% 10px 5% 10px; }
   .about-page .speakers-wrapper {
     text-align: center;
-    width: 75%;
+    width: 90%;
     margin: 0 auto; }
     .about-page .speakers-wrapper .speaker {
       margin: 2%;
       display: inline-block; }
-      .about-page .speakers-wrapper .speaker .speaker-img {
-        height: 250px;
-        width: 250px;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transition: opacity 250ms; }
-      .about-page .speakers-wrapper .speaker .overlay {
-        display: inline-block;
-        position: absolute;
-        height: 250px;
-        width: 250px;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        transition: opacity 250ms; }
-        .about-page .speakers-wrapper .speaker .overlay.Pikachu {
-          background: #FF5B4B; }
-        .about-page .speakers-wrapper .speaker .overlay.Caitlyn {
-          background: #52A3EA; }
-        .about-page .speakers-wrapper .speaker .overlay.Link {
-          background: #6EDC47; }
-        .about-page .speakers-wrapper .speaker .overlay.Daenerys {
-          background: #FF5B4B; }
-        .about-page .speakers-wrapper .speaker .overlay.Harry {
-          background: #52A3EA; }
-      .about-page .speakers-wrapper .speaker .speaker-info {
-        font-family: "Lato";
-        opacity: 0;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 0.5rem;
-        transform: translate(0, -50%);
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transition: opacity 250ms; }
-        .about-page .speakers-wrapper .speaker .speaker-info .speaker-name {
-          font-size: 1.75rem;
-          font-weight: 400; }
-        .about-page .speakers-wrapper .speaker .speaker-info .speaker-description {
+      .about-page .speakers-wrapper .speaker .link {
+        display: inline-block; }
+        .about-page .speakers-wrapper .speaker .link .speaker-img {
+          height: 250px;
+          width: 250px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: opacity 250ms; }
+        .about-page .speakers-wrapper .speaker .link .overlay {
+          display: inline-block;
+          position: absolute;
+          height: 250px;
+          width: 250px;
+          top: 0;
+          left: 0;
+          opacity: 0;
+          transition: opacity 250ms; }
+          .about-page .speakers-wrapper .speaker .link .overlay.May-Li {
+            background: #FF5B4B; }
+          .about-page .speakers-wrapper .speaker .link .overlay.Rita {
+            background: #52A3EA; }
+          .about-page .speakers-wrapper .speaker .link .overlay.Andre {
+            background: #6EDC47; }
+          .about-page .speakers-wrapper .speaker .link .overlay.Viet {
+            background: #FF5B4B; }
+        .about-page .speakers-wrapper .speaker .link .speaker-info {
+          font-family: "Lato";
+          opacity: 0;
+          color: #FFFFFF;
           text-align: center;
-          font-size: 1.5rem;
-          font-weight: 300; }
-      .about-page .speakers-wrapper .speaker:hover .overlay, .about-page .speakers-wrapper .speaker:focus .overlay {
-        opacity: 0.8; }
-      .about-page .speakers-wrapper .speaker:hover .speaker-info, .about-page .speakers-wrapper .speaker:focus .speaker-info {
-        opacity: 1; }
+          padding: 0.5rem;
+          transform: translate(0, -50%);
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transition: opacity 250ms; }
+          .about-page .speakers-wrapper .speaker .link .speaker-info .speaker-name {
+            font-size: 1.75rem;
+            font-weight: 400; }
+          .about-page .speakers-wrapper .speaker .link .speaker-info .speaker-description {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 300; }
+        .about-page .speakers-wrapper .speaker .link:hover .overlay, .about-page .speakers-wrapper .speaker .link:focus .overlay {
+          opacity: 0.8; }
+        .about-page .speakers-wrapper .speaker .link:hover .speaker-info, .about-page .speakers-wrapper .speaker .link:focus .speaker-info {
+          opacity: 1; }
 
 .schedule-page {
   height: auto;
-  padding: 5% 10px 5% 10px; }
+  padding: 5% 0px 5% 0px; }
   .schedule-page .schedule-item {
     width: 70%;
     margin: 0 auto;
@@ -215,3 +228,5 @@ canvas#drops {
 
 .registration-page {
   height: auto; }
+  .registration-page .info {
+    text-align: center; }

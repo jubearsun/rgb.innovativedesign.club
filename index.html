@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="img/logo/favicon.png">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -42,21 +42,28 @@
         <div class="title">about</div>
         <div class="subtitle">What is RGB?</div>
         <div class="info">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolore, dolorum nobis autem, laborum culpa doloribus, quibusdam praesentium sunt repellat obcaecati quisquam repellendus deserunt aperiam eveniet maxime aliquid. Ab, dolorem.
-        </div>
-        <div class="subtitle">What should I bring?</div>
-        <div class="info">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore nobis libero rerum sed aperiam doloremque maxime ad aut placeat! Ullam nisi consequuntur aliquam accusantium nulla quas doloribus tempora cumque, dolore.
+          <p>
+            RGB is back and better than ever, as...
+            Reach, Grow, and Build: How to Break Into the Design Industry!
+          </p>
+          <br>
+          <p>Join Innovative Design on March 12 for a day of learning from industry recruiters and designers, through a series of talks, workshops, and open Q&amp;A. Professional designers who have worked at Google, Facebook, Khan Academy, and more(!) will share their experiences in both entering and working in the industry. We will also feature a recruiter who will give insight on what companies are looking for. The speaker series will be followed by workshops taught by both speakers and other guests, and will focus on how to build yourself professionally.</p>
+          <br>
+          <p>The event will be at Berkeley's brand new Jacobs Hall For Design Innovation. Food &amp; Drinks will be provided, fun will be had, and minds will be blown.</p>
+          <br>
+          <p><b id="bold">*Cal ID required for entry.</b></p>
         </div>
         <div class="subtitle">Who will be there?</div>
         <div class="speakers-wrapper">
           <div class="speaker {{ speaker.name }}" ng-repeat="speaker in speakers track by $index">
-            <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
-            <div class="overlay {{ speaker.name }}"></div>
-            <div class="speaker-info">
-              <div class="speaker-name">{{ speaker.name }}</div>
-              <div class="speaker-description">{{ speaker.position }} at {{ speaker.company }}</div>
-            </div>
+            <a class="link" ng-href="{{ speaker.link }}" target="_blank">
+              <div class="speaker-img" ng-style="{ 'background-image': 'url({{ speaker.image }})' }"></div>
+              <div class="overlay {{ speaker.name }}"></div>
+              <div class="speaker-info">
+                <div class="speaker-name">{{ speaker.name }}</div>
+                <div class="speaker-description">{{ speaker.position }} at {{ speaker.company }}</div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -72,6 +79,9 @@
       </div>
       <div class="registration-page page-container" id="register-container">
         <div class="title">register</div>
+        <div class="info">
+          Are you ready for RGB? <a href="https://www.eventbrite.com/e/rgb-how-to-break-into-the-design-industry-tickets-22144808719">Buy your tickets now!</a>
+        </div>
       </div>
     </div>
   </body>
