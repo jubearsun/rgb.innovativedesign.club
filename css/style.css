@@ -227,6 +227,12 @@ canvas#drops {
           width: 100%; } }
 
 .registration-page {
-  height: auto; }
+  height: auto;
+  padding: 5% 0px 5% 0px; }
   .registration-page .info {
     text-align: center; }
+  .registration-page .logo-wrapper {
+    text-align: center;
+    padding-top: 5%; }
+    .registration-page .logo-wrapper .logo {
+      height: 80px; }

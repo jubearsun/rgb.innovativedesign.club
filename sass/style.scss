@@ -335,8 +335,18 @@ canvas#drops {
 
 .registration-page {
   height: auto;
+  padding: 5% 0px 5% 0px;
 
   .info {
     text-align: center;
+  }
+
+  .logo-wrapper {
+    text-align: center;
+    padding-top: 5%;
+
+    .logo {
+      height: 80px;
+    }
   }
 }

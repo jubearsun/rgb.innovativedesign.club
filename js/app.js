@@ -36,7 +36,7 @@ var app = angular.module('rgb', [])
       {
         time: '9:30 AM',
         name: 'Check In',
-        description: 'Welcome to RGB!  Remember to bring your Cal ID for entry!'
+        description: 'Welcome to RGB!  Grab a warm cup of coffee while you check in! Remember to bring your Cal ID for entry.'
       },
       {
         time: '10:00 AM',
@@ -46,7 +46,7 @@ var app = angular.module('rgb', [])
       {
         time: '12:30 PM',
         name: 'Lunch',
-        description: 'food food food'
+        description: 'Take a break and enjoy complimentary lunch!'
       },
       {
         time: '1:30 PM',
