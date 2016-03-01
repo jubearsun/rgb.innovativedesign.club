@@ -51,12 +51,12 @@ var app = angular.module('rgb', [])
       {
         time: '1:30 PM',
         name: 'Workshop Series #1',
-        description: 'something happens here'
+        description: 'Attend workshops led by speakers and other special guests!'
       },
       {
         time: '2:00 PM',
         name: 'Workshop Series #2',
-        description: 'something else happens here'
+        description: 'Attend workshops led by speakers and other special guests!'
       },
       {
         time: '2:30 PM',
