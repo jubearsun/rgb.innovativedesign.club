@@ -24,7 +24,11 @@ canvas#drops {
 #content {
   font-family: "Montserrat";
   color: #252525;
-  cursor: default; }
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 #pages-wrapper {
   max-width: 1440px;
