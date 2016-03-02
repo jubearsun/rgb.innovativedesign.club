@@ -315,6 +315,7 @@ canvas#drops {
       text-align: left;
       display: inline-block;
       width: 67.5%;
+      margin-bottom: 10px;
 
       .schedule-event {
         font-size: 1.5rem;
@@ -347,6 +348,10 @@ canvas#drops {
 
     .logo {
       height: 80px;
+
+      @media (max-width: 540px) {
+        height: 50px;
+      }
     }
   }
 }

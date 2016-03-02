@@ -36,32 +36,32 @@ var app = angular.module('rgb', [])
       {
         time: '9:30 AM',
         name: 'Check In',
-        description: 'Welcome to RGB!  Grab a warm cup of coffee while you check in! Remember to bring your Cal ID for entry.'
+        description: 'Welcome to RGB!  Enjoy a warm cup of coffee while you check in, and remember to bring your Cal ID for entry.'
       },
       {
         time: '10:00 AM',
         name: 'Speaker Series',
-        description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, what it\'s like working in the design industry, and more!'
+        description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, and what it\'s like working in the design industry.'
       },
       {
         time: '12:30 PM',
         name: 'Lunch',
-        description: 'Take a break and enjoy complimentary lunch!'
+        description: 'Take a break and enjoy complimentary lunch.'
       },
       {
         time: '1:30 PM',
         name: 'Workshop Series #1',
-        description: 'Attend workshops led by speakers and other special guests!'
+        description: 'Attend workshops led by speakers and other special guests.'
       },
       {
         time: '2:00 PM',
         name: 'Workshop Series #2',
-        description: 'Attend workshops led by speakers and other special guests!'
+        description: 'Attend workshops led by speakers and other special guests.'
       },
       {
         time: '2:30 PM',
         name: 'Closing Remarks + Open Floor',
-        description: 'We wrap things up and open up the floor for mingling!'
+        description: 'We wrap things up and open up the floor for mingling.'
       }
     ];
 

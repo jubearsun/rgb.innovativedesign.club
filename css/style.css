@@ -215,7 +215,8 @@ canvas#drops {
     .schedule-page .schedule-item .info-wrapper {
       text-align: left;
       display: inline-block;
-      width: 67.5%; }
+      width: 67.5%;
+      margin-bottom: 10px; }
       .schedule-page .schedule-item .info-wrapper .schedule-event {
         font-size: 1.5rem; }
       .schedule-page .schedule-item .info-wrapper .schedule-description {
@@ -236,3 +237,6 @@ canvas#drops {
     padding-top: 5%; }
     .registration-page .logo-wrapper .logo {
       height: 80px; }
+      @media (max-width: 540px) {
+        .registration-page .logo-wrapper .logo {
+          height: 50px; } }
