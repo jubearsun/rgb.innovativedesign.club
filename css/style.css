@@ -81,8 +81,14 @@ canvas#drops {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-size: 3rem;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%); }
+    .landing-page .landing-text .rgb-logo-wrapper {
+      height: 128px; }
+      .landing-page .landing-text .rgb-logo-wrapper img {
+        display: none;
+        height: 128px;
+        width: 128px; }
     .landing-page .landing-text .words {
       display: none; }
       .landing-page .landing-text .words.red {
@@ -100,6 +106,9 @@ canvas#drops {
         .landing-page .landing-text .words.blue:hover, .landing-page .landing-text .words.blue.flash {
           color: #52A3EA;
           transform: scale(1.2); }
+    @media (max-height: 540px) {
+      .landing-page .landing-text {
+        top: 35%; } }
   .landing-page #nav {
     display: none;
     width: 100%;

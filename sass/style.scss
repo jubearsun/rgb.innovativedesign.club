@@ -105,8 +105,17 @@ canvas#drops {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     font-size: 3rem;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
+
+    .rgb-logo-wrapper {
+      height: 128px;
+      img {
+        display: none;
+        height: 128px;
+        width: 128px;
+      }
+    }
 
     .words {
       display: none;
@@ -140,6 +149,10 @@ canvas#drops {
           transform: scale(1.2);
         }
       }
+    }
+
+    @media (max-height: 540px) {
+      top: 35%;
     }
   }
 

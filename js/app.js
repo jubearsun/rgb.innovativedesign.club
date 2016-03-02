@@ -71,6 +71,10 @@ var app = angular.module('rgb', [])
       }, 'slow');
     };
 
+    function showLogo() {
+      $('#rgb-logo').delay(1800).fadeIn(500, 'linear');
+    };
+
     function animateWords() {
       var time = 0;
       $('.words').each(function() {
@@ -92,9 +96,11 @@ var app = angular.module('rgb', [])
 
     function delayDrops() {
       setTimeout(startDrops, 2500);
-    }
+    };
 
     $(document).ready(function() {
+
+      showLogo();
 
       animateWords();
 
