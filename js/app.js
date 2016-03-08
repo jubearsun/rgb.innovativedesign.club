@@ -29,6 +29,20 @@ var app = angular.module('rgb', [])
         position: 'Communication Designer',
         company: 'Palantir',
         image: './img/speakers/speaker-4.jpg'
+      },
+      {
+        link: 'https://www.google.com/events/io/schedule/session/b35faef0-7abf-e311-b297-00155d5066d7',
+        name: 'Dave Chiu',
+        position: 'Senior Interaction Designer',
+        company: 'Google',
+        image: './img/speakers/speaker-6.jpg',
+      },
+      {
+        link: 'http://www.heyadam.com/',
+        name: 'Adam Debreczeni',
+        position: 'Material Design VR',
+        company: 'Google',
+        image: 'https://pbs.twimg.com/profile_images/663834630034853888/O7Dhoriy.jpg'
       }
     ];
 

@@ -257,6 +257,14 @@ canvas#drops {
           &.Viet {
             background: $red;
           }
+
+          &.Dave {
+            background: $green;
+          }
+
+          &.Adam {
+            background: $blue;
+          }
         }
 
         .speaker-info {
