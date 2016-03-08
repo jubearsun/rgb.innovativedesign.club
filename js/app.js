@@ -42,7 +42,14 @@ var app = angular.module('rgb', [])
         name: 'Adam Debreczeni',
         position: 'Material Design VR',
         company: 'Google',
-        image: 'https://pbs.twimg.com/profile_images/663834630034853888/O7Dhoriy.jpg'
+        image: './img/speakers/speaker-7.jpg'
+      },
+      {
+        link: 'http://carolynzhang.com',
+        name: 'Carolyn Zhang',
+        position: 'Digital Product Designer',
+        company: 'UENO',
+        image: './img/speakers/speaker-8.jpg'
       }
     ];
 
