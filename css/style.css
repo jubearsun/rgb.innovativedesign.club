@@ -183,6 +183,8 @@ canvas#drops {
             background: #52A3EA; }
           .about-page .speakers-wrapper .speaker .link .overlay.Carolyn {
             background: #FF5B4B; }
+          .about-page .speakers-wrapper .speaker .link .overlay.Matthew {
+            background: #6EDC47; }
         .about-page .speakers-wrapper .speaker .link .speaker-info {
           font-family: "Lato";
           opacity: 0;

@@ -50,6 +50,13 @@ var app = angular.module('rgb', [])
         position: 'Digital Product Designer',
         company: 'UENO',
         image: './img/speakers/speaker-8.jpg'
+      },
+      {
+        link: 'http://crookiesblog.blogspot.com/',
+        name: 'Matthew Cruickshank',
+        position: 'Art Director',
+        company: 'Google',
+        image: './img/speakers/speaker-9.jpg'
       }
     ];
 
