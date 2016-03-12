@@ -77,12 +77,12 @@ var app = angular.module('rgb', [])
         description: 'Take a break and enjoy complimentary lunch.'
       },
       {
-        time: '1:30 PM',
+        time: '1:00 PM',
         name: 'Workshop Series #1',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '2:00 PM',
+        time: '1:45 PM',
         name: 'Workshop Series #2',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
