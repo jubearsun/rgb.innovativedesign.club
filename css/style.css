@@ -11,9 +11,6 @@ html {
   font-size: 16px;
   line-height: 1.6; }
 
-body {
-  position: relative; }
-
 canvas#drops {
   top: 0;
   left: 0;
@@ -22,7 +19,7 @@ canvas#drops {
   background: #FFFFFF; }
 
 #content {
-  font-family: "Montserrat";
+  font-family: "Nueue Helvetica", "Helvetica", sans-serif;
   color: #252525;
   cursor: default;
   -webkit-user-select: none;
@@ -43,6 +40,7 @@ canvas#drops {
     text-transform: uppercase;
     margin-bottom: 1.5rem; }
   .page-container .subtitle {
+    text-transform: uppercase;
     padding: 0.4rem;
     text-align: center;
     font-size: 1.5rem;
@@ -54,7 +52,6 @@ canvas#drops {
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 2rem;
-    font-family: "Lato";
     margin-bottom: 1.5rem; }
     .page-container .info #bold {
       font-weight: 700; }
@@ -74,23 +71,31 @@ canvas#drops {
   padding: 0%;
   height: 100vh;
   text-align: center; }
+  .landing-page .landing__image {
+    height: 350px;
+    top: 20%; }
+    .landing-page .landing__image img {
+      height: 100%; }
+    @media (max-width: 920px) {
+      .landing-page .landing__image {
+        height: 300px; } }
+    @media (max-width: 600px) {
+      .landing-page .landing__image {
+        height: 250px; } }
+    @media (max-width: 500px) {
+      .landing-page .landing__image {
+        height: 200px; } }
   .landing-page .landing-text {
-    display: inline-block;
     z-index: 2;
-    height: 250px;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    font-size: 3rem;
-    top: 40%;
-    transform: translateY(-50%); }
-    .landing-page .landing-text .rgb-logo-wrapper {
-      height: 128px; }
-      .landing-page .landing-text .rgb-logo-wrapper img {
-        display: none;
-        height: 128px;
-        width: 128px; }
+    font-size: 1.5rem;
+    top: 20%;
+    width: 100%;
+    margin: 0 auto; }
     .landing-page .landing-text .words {
-      display: none; }
+      display: inline-block;
+      padding: 0 4% 0 4%; }
       .landing-page .landing-text .words.red {
         transition: color 1000ms, transform 1000ms; }
         .landing-page .landing-text .words.red:hover, .landing-page .landing-text .words.red.flash {
@@ -106,6 +111,12 @@ canvas#drops {
         .landing-page .landing-text .words.blue:hover, .landing-page .landing-text .words.blue.flash {
           color: #52A3EA;
           transform: scale(1.2); }
+      @media (max-width: 920px) {
+        .landing-page .landing-text .words {
+          padding: 0 3% 0 3%; } }
+      @media (max-width: 500px) {
+        .landing-page .landing-text .words {
+          font-size: 1rem; } }
     @media (max-height: 540px) {
       .landing-page .landing-text {
         top: 35%; } }
@@ -146,7 +157,7 @@ canvas#drops {
   padding: 5% 10px 5% 10px; }
   .about-page .speakers-wrapper {
     text-align: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto; }
     .about-page .speakers-wrapper .speaker {
       margin: 2%;
@@ -169,24 +180,19 @@ canvas#drops {
           left: 0;
           opacity: 0;
           transition: opacity 250ms; }
-          .about-page .speakers-wrapper .speaker .link .overlay.May-Li {
+          .about-page .speakers-wrapper .speaker .link .overlay.Jeff {
             background: #FF5B4B; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Rita {
+          .about-page .speakers-wrapper .speaker .link .overlay.Linda {
             background: #52A3EA; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Andre {
+          .about-page .speakers-wrapper .speaker .link .overlay.Wayne {
             background: #6EDC47; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Viet {
+          .about-page .speakers-wrapper .speaker .link .overlay.Viraj {
             background: #FF5B4B; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Dave {
+          .about-page .speakers-wrapper .speaker .link .overlay.Stephanie {
             background: #6EDC47; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Adam {
+          .about-page .speakers-wrapper .speaker .link .overlay.Benjamin {
             background: #52A3EA; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Carolyn {
-            background: #FF5B4B; }
-          .about-page .speakers-wrapper .speaker .link .overlay.Matthew {
-            background: #6EDC47; }
         .about-page .speakers-wrapper .speaker .link .speaker-info {
-          font-family: "Lato";
           opacity: 0;
           color: #FFFFFF;
           text-align: center;
@@ -195,7 +201,8 @@ canvas#drops {
           position: absolute;
           top: 50%;
           left: 0;
-          transition: opacity 250ms; }
+          transition: opacity 250ms;
+          width: 100%; }
           .about-page .speakers-wrapper .speaker .link .speaker-info .speaker-name {
             font-size: 1.75rem;
             font-weight: 400; }
@@ -212,18 +219,17 @@ canvas#drops {
   height: auto;
   padding: 5% 0px 5% 0px; }
   .schedule-page .schedule-item {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
-    line-height: 2.5rem;
-    font-family: "Lato"; }
+    line-height: 2.5rem; }
     .schedule-page .schedule-item .schedule-time {
       font-size: 1.5rem;
       text-align: right;
       vertical-align: top;
       display: inline-block;
       width: 20%;
-      margin-right: 2.5%; }
+      margin-right: 8%; }
       @media (max-width: 780px) {
         .schedule-page .schedule-item .schedule-time {
           display: block;
@@ -233,7 +239,7 @@ canvas#drops {
       text-align: left;
       display: inline-block;
       width: 67.5%;
-      margin-bottom: 10px; }
+      margin-bottom: 8%; }
       .schedule-page .schedule-item .info-wrapper .schedule-event {
         font-size: 1.5rem; }
       .schedule-page .schedule-item .info-wrapper .schedule-description {

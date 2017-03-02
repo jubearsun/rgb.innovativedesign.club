@@ -15,10 +15,6 @@ html {
   line-height: 1.6;
 }
 
-body {
-  position: relative;
-}
-
 canvas#drops {
   top: 0;
   left: 0;
@@ -28,7 +24,7 @@ canvas#drops {
 }
 
 #content {
-  font-family: "Montserrat";
+  font-family: "Nueue Helvetica", "Helvetica", sans-serif;
   color: $black;
   cursor: default;
   -webkit-user-select: none;
@@ -54,6 +50,7 @@ canvas#drops {
   }
 
   .subtitle {
+    text-transform: uppercase;
     padding: 0.4rem;
     text-align: center;
     font-size: 1.5rem;
@@ -67,7 +64,6 @@ canvas#drops {
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 2rem;
-    font-family: "Lato";
     margin-bottom: 1.5rem;
 
     #bold {
@@ -98,27 +94,39 @@ canvas#drops {
   height: 100vh;
   text-align: center;
 
-  .landing-text {
-    display: inline-block;
-    z-index: 2;
-    height: 250px;
-    letter-spacing: 0.4rem;
-    text-transform: uppercase;
-    font-size: 3rem;
-    top: 40%;
-    transform: translateY(-50%);
+  .landing__image {
+    height: 350px;
+    top: 20%;
 
-    .rgb-logo-wrapper {
-      height: 128px;
-      img {
-        display: none;
-        height: 128px;
-        width: 128px;
-      }
+    img {
+      height: 100%;
     }
 
+    @media (max-width: 920px) {
+      height: 300px;
+    }
+
+    @media (max-width: 600px) {
+      height: 250px;
+    }
+
+    @media (max-width: 500px) {
+      height: 200px;
+    }
+  }
+
+  .landing-text {
+    z-index: 2;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    top: 20%;
+    width: 100%;
+    margin: 0 auto;
+
     .words {
-      display: none;
+      display: inline-block;
+      padding: 0 4% 0 4%;
 
       &.red {
         transition: color 1000ms, transform 1000ms;
@@ -148,6 +156,14 @@ canvas#drops {
           color: $blue;
           transform: scale(1.2);
         }
+      }
+
+      @media (max-width: 920px) {
+        padding: 0 3% 0 3%;
+      }
+
+      @media (max-width: 500px) {
+        font-size: 1rem;
       }
     }
 
@@ -213,7 +229,7 @@ canvas#drops {
 
   .speakers-wrapper {
     text-align: center;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 
     .speaker {
@@ -242,41 +258,32 @@ canvas#drops {
           opacity: 0;
           transition: opacity 250ms;
 
-          &.May-Li {
+          &.Jeff {
             background: $red;
           }
 
-          &.Rita {
+          &.Linda {
             background: $blue;
           }
 
-          &.Andre {
+          &.Wayne {
             background: $green;
           }
 
-          &.Viet {
+          &.Viraj {
             background: $red;
           }
 
-          &.Dave {
+          &.Stephanie {
             background: $green;
           }
 
-          &.Adam {
+          &.Benjamin {
             background: $blue;
-          }
-
-          &.Carolyn {
-            background: $red;
-          }
-
-          &.Matthew {
-            background: $green;
           }
         }
 
         .speaker-info {
-          font-family: "Lato";
           opacity: 0;
           color: $white;
           text-align: center;
@@ -286,6 +293,7 @@ canvas#drops {
           top: 50%;
           left: 0;
           transition: opacity 250ms;
+          width: 100%;
 
           .speaker-name {
             font-size: 1.75rem;
@@ -319,11 +327,10 @@ canvas#drops {
   padding: 5% 0px 5% 0px;
 
   .schedule-item {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     font-size: 1.2rem;
     line-height: 2.5rem;
-    font-family: "Lato";
 
     .schedule-time {
       font-size: 1.5rem;
@@ -331,7 +338,7 @@ canvas#drops {
       vertical-align: top;
       display: inline-block;
       width: 20%;
-      margin-right: 2.5%;
+      margin-right: 8%;
 
       @media (max-width: 780px) {
         display: block;
@@ -344,7 +351,7 @@ canvas#drops {
       text-align: left;
       display: inline-block;
       width: 67.5%;
-      margin-bottom: 10px;
+      margin-bottom: 8%;
 
       .schedule-event {
         font-size: 1.5rem;

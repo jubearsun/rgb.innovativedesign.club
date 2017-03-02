@@ -3,91 +3,77 @@ var app = angular.module('rgb', [])
 
     $scope.speakers = [
       {
-        link: 'http://www.maylikhoe.com',
-        name: 'May-Li Khoe',
-        position: 'Design Lead',
-        company: 'Khan Academy',
+        link: 'http://jhil.co/',
+        name: 'Jeff Hilnbrand',
+        position: 'Product Designer',
+        company: 'Facebook',
         image: './img/speakers/speaker-1.jpg'
       },
       {
-        link: 'http://ritaderaedt.com/',
-        name: 'Rita DeRaedt',
-        position: 'Product Designer',
-        company: 'Google',
+        link: 'http://lindaeliasen.com/',
+        name: 'Linda Eliason',
+        position: 'Art Director',
+        company: 'Ueno',
         image: './img/speakers/speaker-2.jpg'
       },
       {
-        link: 'http://www.andretacuyan.com/',
-        name: 'Andre Tacuyan',
+        link: 'http://spgl.co/',
+        name: 'Wayne Spiegel',
         position: 'Product Designer',
-        company: 'Google',
+        company: 'Palantir',
         image: './img/speakers/speaker-3.jpg'
       },
       {
-        link: 'http://viethuynh.com/',
-        name: 'Viet Huynh',
-        position: 'Communication Designer',
-        company: 'Palantir',
+        link: 'http://vrjbndr.com/',
+        name: 'Viraj Bindra',
+        position: 'Lead Product Designer',
+        company: 'Doordash',
         image: './img/speakers/speaker-4.jpg'
       },
       {
-        link: 'https://www.google.com/events/io/schedule/session/b35faef0-7abf-e311-b297-00155d5066d7',
-        name: 'Dave Chiu',
-        position: 'Senior Interaction Designer',
-        company: 'Google',
-        image: './img/speakers/speaker-6.jpg',
+        link: 'http://www.soengle.com/',
+        name: 'Stephanie Engle',
+        position: 'VR Product Designer',
+        company: 'Facebook',
+        image: './img/speakers/speaker-5.jpg',
       },
       {
-        link: 'http://www.heyadam.com/',
-        name: 'Adam Debreczeni',
-        position: 'Material Design VR',
-        company: 'Google',
-        image: './img/speakers/speaker-7.jpg'
-      },
-      {
-        link: 'http://carolynzhang.com',
-        name: 'Carolyn Zhang',
-        position: 'Digital Product Designer',
-        company: 'UENO',
-        image: './img/speakers/speaker-8.jpg'
-      },
-      {
-        link: 'http://crookiesblog.blogspot.com/',
-        name: 'Matthew Cruickshank',
-        position: 'Art Director',
-        company: 'Google',
-        image: './img/speakers/speaker-9.jpg'
+        link: 'http://zweig.co/',
+        name: 'Benjamin Zweig',
+        position: 'Product Designer',
+        company: 'Twitch',
+        image: './img/speakers/speaker-6.jpg'
       }
     ];
 
     $scope.schedule = [
       {
-        time: '9:30 AM',
+        time: '10:30 AM',
         name: 'Check In',
         description: 'Welcome to RGB!  Enjoy a warm cup of coffee while you check in, and remember to bring your Cal ID for entry.'
       },
       {
-        time: '10:00 AM',
+        time: '11:00 AM',
         name: 'Speaker Series',
         description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, and what it\'s like working in the design industry.'
       },
       {
-        time: '12:30 PM',
+        time: '1:00 PM',
         name: 'Lunch',
         description: 'Take a break and enjoy complimentary lunch.'
       },
       {
-        time: '1:00 PM',
+        time: '1:30 PM',
         name: 'Workshop Series #1',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '1:45 PM',
+        time: '2:30 PM',
         name: 'Workshop Series #2',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '2:30 PM',
+        time: '3:30 PM',
         name: 'Closing Remarks + Open Floor',
         description: 'We wrap things up and open up the floor for mingling.'
       }
@@ -99,14 +85,14 @@ var app = angular.module('rgb', [])
       }, 'slow');
     };
 
-    function showLogo() {
-      $('#rgb-logo').delay(1800).fadeIn(500, 'linear');
-    };
-
     function animateWords() {
       var time = 0;
       $('.words').each(function() {
-        $(this).delay(time).fadeIn(1000).addClass('flash');
+        $(this).delay(time)
+        .fadeIn(1000)
+        .css('opacity',0)
+        .animate({'opacity': 1}, 500)
+        .addClass('flash');
 
         (function(element, initTime) {
           setTimeout(function() {
@@ -127,9 +113,6 @@ var app = angular.module('rgb', [])
     };
 
     $(document).ready(function() {
-
-      showLogo();
-
       animateWords();
 
       showNav();
@@ -175,7 +158,7 @@ var app = angular.module('rgb', [])
 
     Part.prototype.reset = function() {
       // Radius
-      this.startRadius = rand(1, 10);
+      this.startRadius = rand(1, 5);
       this.radius = this.startRadius;
 
       // Position
@@ -184,14 +167,14 @@ var app = angular.module('rgb', [])
 
       // Color
       this.hue = randomRGB();
-      this.saturation = rand(70, 85);
-      this.lightness = rand(70, 80);
-      this.startAlpha = 0.5;
+      this.saturation = rand(80, 90);
+      this.lightness = rand(40, 80);
+      this.startAlpha = 1;
       this.alpha = this.startAlpha;
 
       // Decay
-      this.decayRate = .3;
-      this.startLife = rand(20, 30);
+      this.decayRate = .4;
+      this.startLife = rand(30, 40);
       this.life = this.startLife;
       this.lineWidth = 1;
     }
