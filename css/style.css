@@ -131,7 +131,7 @@ canvas#drops {
     bottom: 0;
     text-transform: uppercase; }
     .landing-page #nav .nav-item {
-      padding: 0.4rem;
+      padding: 0.7rem;
       display: inline-block; }
       .landing-page #nav .nav-item#about {
         color: #888888;
@@ -150,6 +150,9 @@ canvas#drops {
           color: #52A3EA; }
       .landing-page #nav .nav-item:hover {
         cursor: pointer; }
+    @media (max-width: 500px) {
+      .landing-page #nav {
+        padding: 0.4rem; } }
     @media (max-width: 400px) {
       .landing-page #nav {
         font-size: 1rem; } }

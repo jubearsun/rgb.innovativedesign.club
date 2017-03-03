@@ -48,32 +48,32 @@ var app = angular.module('rgb', [])
 
     $scope.schedule = [
       {
-        time: '10:30 AM',
+        time: '10:00 AM',
         name: 'Check In',
         description: 'Welcome to RGB!  Enjoy a warm cup of coffee while you check in, and remember to bring your Cal ID for entry.'
       },
       {
-        time: '11:00 AM',
+        time: '10:30 AM',
         name: 'Speaker Series',
         description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, and what it\'s like working in the design industry.'
       },
       {
-        time: '1:00 PM',
+        time: '12:30 PM',
         name: 'Lunch',
         description: 'Take a break and enjoy complimentary lunch.'
       },
       {
-        time: '1:30 PM',
+        time: '1:00 PM',
         name: 'Workshop Series #1',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '2:30 PM',
+        time: '2:00 PM',
         name: 'Workshop Series #2',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '3:30 PM',
+        time: '3:00 PM',
         name: 'Closing Remarks + Open Floor',
         description: 'We wrap things up and open up the floor for mingling.'
       }
