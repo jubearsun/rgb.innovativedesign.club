@@ -26,7 +26,7 @@ var app = angular.module('rgb', [])
       {
         link: 'http://vrjbndr.com/',
         name: 'Viraj Bindra',
-        position: 'Lead Product Designer',
+        position: 'Product Designer',
         company: 'Doordash',
         image: './img/speakers/speaker-4.jpg'
       },
