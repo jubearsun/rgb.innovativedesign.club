@@ -60,7 +60,7 @@ canvas#drops {
   }
 
   .info {
-    padding: 0.2rem;
+    padding: 1rem;
     color: $grey;
     max-width: 900px;
     margin: 0 auto;
@@ -115,6 +115,10 @@ canvas#drops {
     @media (max-width: 500px) {
       height: 200px;
     }
+
+    @media (max-width: 400px) {
+      height: 150px;
+    }
   }
 
   .landing-text {
@@ -165,6 +169,7 @@ canvas#drops {
       }
 
       @media (max-width: 500px) {
+        padding: 0;
         font-size: 1rem;
       }
     }
