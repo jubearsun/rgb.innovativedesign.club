@@ -266,7 +266,7 @@ canvas#drops {
       line-height: 1;
       background: #6EDC47;
       border: 2px solid #FFFFFF;
-      border-radius: 32px;
+      border-radius: 18px;
       overflow: hidden;
       color: #FFFFFF;
       transition: color 0.2s ease-in;
