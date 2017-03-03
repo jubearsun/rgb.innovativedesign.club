@@ -11,7 +11,7 @@ var app = angular.module('rgb', [])
       },
       {
         link: 'http://lindaeliasen.com/',
-        name: 'Linda Eliason',
+        name: 'Linda Eliasen',
         position: 'Art Director',
         company: 'Ueno',
         image: './img/speakers/speaker-2.jpg'

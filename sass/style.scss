@@ -42,6 +42,7 @@ canvas#drops {
   padding: 2%;
 
   .title {
+    font-weight: bold;
     padding: 2rem;
     font-size: 2.5rem;
     text-align: center;
@@ -50,6 +51,7 @@ canvas#drops {
   }
 
   .subtitle {
+    font-weight: 500;
     text-transform: uppercase;
     padding: 0.4rem;
     text-align: center;
@@ -275,11 +277,11 @@ canvas#drops {
           }
 
           &.Stephanie {
-            background: $green;
+            background: $blue;
           }
 
           &.Benjamin {
-            background: $blue;
+            background: $green;
           }
         }
 
@@ -376,6 +378,45 @@ canvas#drops {
 
   .info {
     text-align: center;
+
+    .register__button--wrapper {
+      .register__button {
+        padding: 1.25rem 2.5rem;
+        font-size: 1.5rem;
+        line-height: 1;
+        background: $green;
+        border: 2px solid $white;
+        border-radius: 32px;
+        overflow: hidden;
+        color: $white;
+        transition: color 0.2s ease-in;
+        outline: none;
+        user-select: none;
+        text-transform: uppercase;
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 105%;
+          height: 105%;
+          z-index: -1;
+          background: $blue;
+          transition: top 0.25s;
+        }
+
+        &:hover {
+        cursor: pointer;
+
+          &::after {
+            top: 0;
+          }
+        }
+      }
+    }
   }
 
   .logo-wrapper {
