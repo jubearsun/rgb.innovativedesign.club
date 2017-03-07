@@ -201,6 +201,8 @@ canvas#drops {
             background: #52A3EA; }
           .about-page .speakers-wrapper .speaker .link .overlay.Benjamin {
             background: #6EDC47; }
+          .about-page .speakers-wrapper .speaker .link .overlay.Jessica {
+            background: #FF5B4B; }
         .about-page .speakers-wrapper .speaker .link .speaker-info {
           opacity: 0;
           color: #FFFFFF;

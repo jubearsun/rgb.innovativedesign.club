@@ -43,6 +43,13 @@ var app = angular.module('rgb', [])
         position: 'Product Designer',
         company: 'Twitch',
         image: './img/speakers/speaker-6.jpg'
+      },
+      {
+        link: 'http://jessicahische.is/',
+        name: 'Jessica Hische',
+        position: 'Lettering Artist and',
+        company: 'Author',
+        image: './img/speakers/speaker-7.jpg'
       }
     ];
 
