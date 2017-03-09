@@ -50,6 +50,13 @@ var app = angular.module('rgb', [])
         position: 'Lettering Artist and',
         company: 'Author',
         image: './img/speakers/speaker-7.jpg'
+      },
+      {
+        link: 'http://kerem.co/',
+        name: 'Kerem Suer',
+        position: 'Freelance',
+        company: 'Product Designer',
+        image: './img/speakers/speaker-8.jpg'
       }
     ];
 
@@ -61,26 +68,31 @@ var app = angular.module('rgb', [])
       },
       {
         time: '10:30 AM',
-        name: 'Speaker Series',
+        name: 'Speaker Series #1',
         description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, and what it\'s like working in the design industry.'
       },
       {
-        time: '12:30 PM',
+        time: '12:15 PM',
         name: 'Lunch',
         description: 'Take a break and enjoy complimentary lunch.'
       },
       {
         time: '1:00 PM',
-        name: 'Workshop Series #1',
+        name: 'Speaker Series #2',
+        description: 'Listen to the guest speakers talk about what recruiters look for in aspiring designers, how they got into the design industry, and what it\'s like working in the design industry.'
+      },
+      {
+        time: '1:45 PM',
+        name: 'Networking',
+        description: 'Short break while you network with fellow designers and the speakers themselves!'
+      },
+      {
+        time: '2:45 PM',
+        name: 'Workshop Series',
         description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
       },
       {
-        time: '2:00 PM',
-        name: 'Workshop Series #2',
-        description: 'Come participate in workshops lead by speakers and other special guests about the creative process and portfolio critiques.'
-      },
-      {
-        time: '3:00 PM',
+        time: '3:30 PM',
         name: 'Closing Remarks + Open Floor',
         description: 'We wrap things up and open up the floor for mingling.'
       }
