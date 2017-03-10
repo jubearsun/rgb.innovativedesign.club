@@ -50,13 +50,6 @@ var app = angular.module('rgb', [])
         position: 'Lettering Artist and',
         company: 'Author',
         image: './img/speakers/speaker-7.jpg'
-      },
-      {
-        link: 'http://kerem.co/',
-        name: 'Kerem Suer',
-        position: 'Freelance',
-        company: 'Product Designer',
-        image: './img/speakers/speaker-8.jpg'
       }
     ];
 
